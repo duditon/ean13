@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Gerador de código EAN-13</title>
+</head>
+<body>
+
+    <section>
+        <h1>Gerador de código EAN-13</h1>
+        <div class="container-input">
+            <select id="ipt1">
+                <option value="null" selected disabled hidden>Escolha um produto</option>
+                <option value="789001">789001 - Botas e Botinas</option>
+                <option value="789002">789002 - Chapéu</option>
+                <option value="789003">789003 - Bolsas</option>
+                <option value="789004">789004 - Acessórios</option>
+                <option value="789005">789005 - Vestuário</option>
+                <option value="789006">789006 - Cintos e Carteiras</option>
+            </select>
+        </div>
+        <div class="container-input">
+            <p>Id Produto:</p>
+            <input type="number" id="ipt2">
+        </div>
+        <div class="container-input">
+            <p>Variações:</p>
+            <input type="number" id="ipt3">
+        </div>
+        <div class="container-input">
+            <input type="button" id="ipt4" value="GERAR">
+        </div>
+
+        <div class="container-result"></div>
+    </section>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
